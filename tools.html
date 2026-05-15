@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tools — Ashok Sivathayalan</title>
+  <meta name="description" content="Small side tools and utilities by Ashok Sivathayalan." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (_) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="page">
+      <a class="brand" href="index.html">~/ashoksivathayalan</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="tools.html" aria-current="page">tools</a>
+        <a href="experience.html">experience</a>
+        <!--
+          <a href="publications.html">publications →</a>
+        -->
+        <button type="button" class="theme-toggle" aria-label="Toggle color theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1 class="section-label">tools</h1>
+
+    <p class="tool-intro">
+      Random stuff I (Claude) built that you may find interesting or useful
+    </p>
+
+    <div class="tool-list">
+      <article class="tool-card">
+        <header class="tool-head">
+          <h3>Twin city pairs</h3>
+          <a class="tool-live" href="https://ashoksivathayalan.github.io/city-families/" rel="noopener">live ↗</a>
+        </header>
+        <p class="tool-desc">
+          A visualizer and explorer for twin-city relationships around the world
+        </p>
+        <!--
+          <div class="tag-row">
+            <span class="tag">html</span>
+            <span class="tag">js</span>
+          </div>
+        -->
+        <div class="tool-links">
+          <a href="https://github.com/AshokSivathayalan/city-families" rel="noopener">source ↗</a>
+        </div>
+      </article>
+      <article class="tool-card">
+        <header class="tool-head">
+          <h3>Cydrillic</h3>
+          <a class="tool-live" href="https://cydrillic.vercel.app/" rel="noopener">live ↗</a>
+        </header>
+        <p class="tool-desc">
+          A simple training and study tool the Cyrillic alphabets, geared towards GeoGuessr players.
+        </p>
+        <!--
+          <div class="tag-row">
+            <span class="tag">html</span>
+            <span class="tag">js</span>
+          </div>
+        -->
+        <div class="tool-links">
+          <a href="https://github.com/AshokSivathayalan/cyrillic-drills" rel="noopener">source ↗</a>
+        </div>
+      </article>
+
+      <!-- TODO: Add new tool cards here, following the same .tool-card structure. -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page">
+      <span class="footer-meta">© <span data-year>2026</span> Ashok Sivathayalan</span>
+      <div class="footer-icons">
+        <a href="https://github.com/ashoksivathayalan" aria-label="GitHub" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.02c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.69.08-.69 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.73.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56 4.57-1.52 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/ashsiva" aria-label="LinkedIn" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM2.4 9.99h5.16v13.51H2.4V9.99zm7.74 0h4.95v1.85h.07c.69-1.3 2.37-2.67 4.88-2.67 5.22 0 6.19 3.44 6.19 7.91v6.42h-5.16v-5.7c0-1.36-.03-3.1-1.89-3.1-1.89 0-2.18 1.48-2.18 3v5.8h-5.16V9.99z"/></svg>
+        </a>
+        <a href="mailto:ashok.sivathayalan@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </div>
+      <p class="footer-note">built with HTML, CSS, and a little JS · hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
