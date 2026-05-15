@@ -21,27 +21,6 @@ Personal website. Plain HTML, CSS, and a sprinkle of vanilla JavaScript — no b
 └── README.md
 ```
 
-## First-time setup: fill in the placeholders
-
-Every page uses `{{PLACEHOLDER}}` tokens for personal info. Replace them with a single find-and-replace pass across the repo:
-
-| Placeholder              | Example                                  |
-| ------------------------ | ---------------------------------------- |
-| `Ashok Sivathayalan`          | `Jane Doe`                               |
-| `ashok.sivathayalan@gmail.com`              | `jane@example.com`                       |
-| `AshokSivathayalan`    | `janedoe`                                |
-| `ashsiva`    | `jane-doe` (the part after `/in/`)       |
-| `{{PAPERIO_REPO_URL}}`   | `https://github.com/janedoe/paperio-rl`  |
-| `{{WILDFIRE_REPO_URL}}`  | `https://github.com/janedoe/wildfire`    |
-| `{{CV_PDF_PATH}}`        | `/assets/docs/cv.pdf` (default)          |
-| `{{WILDFIRE_POSTER_PDF}}`| `/assets/docs/wildfire-poster.pdf`       |
-| `{{TWIN_CITIES_URL}}`    | `https://example.com/twin-cities`        |
-| `{{TWIN_CITIES_REPO_URL}}` | `https://github.com/janedoe/twin-cities` (optional) |
-| `{{CYRILLIC_URL}}`       | `https://example.com/cyrillic`           |
-| `{{CYRILLIC_REPO_URL}}`  | `https://github.com/janedoe/cyrillic` (optional) |
-
-`2026` in the footer is replaced at runtime by `main.js`, so leave it alone.
-
 ## Preview locally
 
 Open `index.html` directly in your browser, or serve the directory:
