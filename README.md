@@ -8,16 +8,15 @@ Personal website. Plain HTML, CSS, and a sprinkle of vanilla JavaScript — no b
 /
 ├── index.html              # Home / About
 ├── projects.html           # Projects index
-├── tools.html              # Small side tools / utilities
+├── etc.html                # Small side tools / utilities ("etc.")
 ├── experience.html         # CV-style page
 ├── publications.html       # Publications & posters
 ├── 404.html                # Custom 404
 ├── .nojekyll               # Disable Jekyll on GitHub Pages
 ├── assets/
-│   ├── css/style.css       # Single stylesheet, dark theme via CSS custom properties
+│   ├── css/style.css       # Single stylesheet, light/dark via prefers-color-scheme
 │   ├── js/main.js          # Footer year stamp
 │   ├── img/favicon.svg     # Neuron favicon
-│   ├── fonts/              # Self-hosted Inter + JetBrains Mono (see fonts/README.md)
 │   └── docs/               # PDFs (CV, posters) — drop your files here
 └── README.md
 ```
@@ -53,7 +52,7 @@ The empty `.nojekyll` file at the repo root tells GitHub Pages to serve files as
 ## Maintaining the site
 
 - **Add a project:** open `projects.html` and copy an existing `<article class="entry">` block. There's a `TODO` comment marking the insertion point. *Use this for substantial work you designed and built.*
-- **Add a tool:** open `tools.html` and copy an existing `<article class="entry">` block. *Use this for small side things you mostly built with Claude from an idea — kept separate from projects on purpose.*
+- **Add a tool:** open `etc.html` and copy an existing `<article class="entry">` block. *Use this for small side things you mostly built with Claude from an idea — kept separate from projects on purpose.*
 - **Add a publication:** open `publications.html` and add a `<li>` to the `.pub-list` ordered list. There's a `TODO` comment at the bottom.
 - **Add a work entry:** open `experience.html` and copy an existing `.cv-entry` block inside the Work section.
 - **Update the CV:** drop the file at `assets/docs/cv.pdf` (or change the link target if you prefer a different name).
