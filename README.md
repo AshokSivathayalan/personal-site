@@ -16,7 +16,7 @@ Personal website. Plain HTML, CSS, and a sprinkle of vanilla JavaScript — no b
 ├── assets/
 │   ├── css/style.css       # Single stylesheet, light/dark via prefers-color-scheme
 │   ├── js/main.js          # Footer year stamp
-│   ├── img/favicon.svg     # Neuron favicon
+│   ├── img/favicon.svg     # "AS" monogram favicon
 │   └── docs/               # PDFs (CV, posters) — drop your files here
 └── README.md
 ```
@@ -55,8 +55,8 @@ The empty `.nojekyll` file at the repo root tells GitHub Pages to serve files as
 - **Add a tool:** open `etc.html` and copy an existing `<article class="entry">` block. *Use this for small side things you mostly built with Claude from an idea — kept separate from projects on purpose.*
 - **Add a publication:** open `publications.html` and add a `<li>` to the `.pub-list` ordered list. There's a `TODO` comment at the bottom.
 - **Add a work entry:** open `experience.html` and copy an existing `.cv-entry` block inside the Work section.
-- **Update the CV:** drop the file at `assets/docs/cv.pdf` (or change the link target if you prefer a different name).
-- **Tweak colors / typography:** edit the CSS custom properties at the top of `assets/css/style.css`. The `:root` block holds the (dark) color palette, type tokens, and layout sizes.
+- **Update the CV:** building `main.tex` in VS Code (from the Resumes folder) copies the PDF to `assets/docs/resume.pdf` automatically. When it looks right, run `scripts/publish-resume.sh` to commit and push it.
+- **Tweak colors / typography:** edit the CSS custom properties at the top of `assets/css/style.css`. The `:root` block holds the light palette (dark-mode overrides sit just below it), type tokens, and layout sizes.
 
 ## Custom domain (later, optional)
 
